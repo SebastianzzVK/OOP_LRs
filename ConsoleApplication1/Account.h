@@ -2,42 +2,30 @@
 #define ACCOUNT_H
 
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <string>
-#include <algorithm>
 
 using namespace std;
 
-// 1. Визначити клас Account
 class Account {
 private:
-    double balance;           // Приватне поле для зберігання балансу
-    double creditLimit;       // Приватне поле для зберігання кредитного ліміту
-    string accountNumber;     // Приватне поле для зберігання номера рахунку
-    vector<double> transactions; // Приватне поле для зберігання історії транзакцій
+    double balance; // Поле даних для балансу рахунку
+    double creditLimit; // Поле даних для кредитного ліміту
+    string accountNumber; // Поле даних для номеру рахунку
+    static int accountCount; // Статичне поле для підрахунку рахунків
 
 public:
-    Account(); // Конструктор без параметрів
-    Account(double balance, double creditLimit, const string& accountNumber); // Конструктор з параметрами
+    Account(); // 1. Конструктор без параметрів
+    Account(double balance, double creditLimit, const string& accountNumber); // 1. Конструктор з параметрами
+    Account(const Account& other); // 1. Конструктор копіювання
 
-    // 4. Метод для внесення грошей
-    void deposit(double amount);
+    
 
-    // 4. Метод для зняття грошей
-    bool withdraw(double amount);
-
-    // 4. Метод для отримання балансу
-    double getBalance() const;
-
-    // 5. Метод для запису даних рахунку у файл
-    void saveToFile(const string& filename) const;
-
-    // 5. Метод для читання даних рахунку з файлу
-    void loadFromFile(const string& filename);
-
-    // 4. Метод для відображення історії транзакцій
-    void displayTransactionHistory() const;
+    void deposit(double amount); // Метод для внесення грошей
+    bool withdraw(double amount); // Метод для зняття грошей
+    double getBalance() const; // Метод для отримання балансу
+    static int getAccountCount(); // Статичний метод для отримання кількості рахунків
+    ~Account(); // 3. Деструктор
 };
 
 #endif // ACCOUNT_H
