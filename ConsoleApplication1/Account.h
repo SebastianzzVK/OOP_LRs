@@ -2,42 +2,63 @@
 #define ACCOUNT_H
 
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <string>
-#include <algorithm>
 
 using namespace std;
 
-// 1. Визначити клас Account
 class Account {
 private:
-    double balance;           // Приватне поле для зберігання балансу
-    double creditLimit;       // Приватне поле для зберігання кредитного ліміту
-    string accountNumber;     // Приватне поле для зберігання номера рахунку
-    vector<double> transactions; // Приватне поле для зберігання історії транзакцій
+    double balance;
+    double creditLimit;
+    string accountNumber;
+    static int accountCount;
+    
+
+protected:
+    string bankName; // Назва банку
+    string branchCode; // Код філії банку
+     
 
 public:
-    Account(); // Конструктор без параметрів
-    Account(double balance, double creditLimit, const string& accountNumber); // Конструктор з параметрами
+    Account(); // 1. Конструктор без параметрів
+    Account(double balance, double creditLimit, const string& accountNumber); // 1. Конструктор з параметрами
+    Account(const Account& other); 
+    virtual ~Account();  // Віртуальний деструктор для правильного видалення об'єктів
 
-    // 4. Метод для внесення грошей
-    void deposit(double amount);
+    string accountType; // Тип рахунку (наприклад, поточний, депозитний)
+    string accountHolder; // Власник рахунку
+    
+    double getBalance() const; // Метод для отримання балансу
+    static int getAccountCount(); // Статичний метод для отримання кількості рахунків
+    
 
-    // 4. Метод для зняття грошей
-    bool withdraw(double amount);
 
-    // 4. Метод для отримання балансу
-    double getBalance() const;
 
-    // 5. Метод для запису даних рахунку у файл
-    void saveToFile(const string& filename) const;
+    Account(double initial_balance, const std::string& acc_number)
+        : balance(initial_balance), accountNumber(acc_number) {
+        accountCount++;
+    }
 
-    // 5. Метод для читання даних рахунку з файлу
-    void loadFromFile(const string& filename);
+    virtual void deposit(double amount) {// Метод для внесення грошей
+        balance += amount;
+    }
 
-    // 4. Метод для відображення історії транзакцій
-    void displayTransactionHistory() const;
+    virtual bool withdraw(double amount) { // Метод для зняття грошей
+        if (balance >= amount) {
+            balance -= amount;
+            return true;
+        }
+        else {
+            std::cout << "Недостатньо коштів для зняття!" << std::endl;
+            return false;
+        }
+    }
+
+    virtual void display_balance() const {
+        std::cout << "Баланс акаунту " << accountNumber << ": " << balance << std::endl;
+    }
+
 };
 
 #endif // ACCOUNT_H

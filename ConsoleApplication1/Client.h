@@ -3,41 +3,46 @@
 
 #include "Account.h"
 
-using namespace std;
-
-// 1. Визначити 2 будь-яких користувацьких класи: Client та Account
 class Client {
 private:
-    string name;         // Приватне поле для зберігання імені клієнта
-    int clientID;       // Приватне поле для зберігання ID клієнта
-    double creditLimit;  // Приватне поле для зберігання кредитного ліміту
-    bool isVIP;         // Приватне поле для визначення статусу VIP
-    Account clientAccount; // 3. Об'єкт класу Account, що представляє рахунок клієнта
+    string name;
+    int clientID;
+    Account clientAccount;
 
+    double creditLimitRequest; // Запит на зміну кредитного ліміту
+    bool creditLimitApproved; // Статус затвердження запиту на ліміт
+
+    //Пункт 7
 public:
-    Client(); // Конструктор без параметрів
-    Client(string name, int clientID, double creditLimit, bool isVIP, const Account& account); // Конструктор з параметрами
+    Client();
+    Client(const string& name, int clientID, const Account& account);
+    ~Client();
 
-    // 4. Метод для здійснення платежу
-    void makePayment(double amount);
 
-    // 4. Метод для переказу грошей іншому клієнту
-    void transferTo(Client& otherClient, double amount);
+    void displayAccountDetails() const; // Метод для відображення деталей рахунку
 
-    // 4. Метод для запиту підвищення кредитного ліміту
-    void requestCreditLimitIncrease(double newLimit);
+    Client(const std::string& client_name, Account& client_account)
+        : name(client_name), clientAccount(client_account) {}
 
-    // 5. Метод для запису даних клієнта у файл
-    void saveToFile(const string& filename) const;
+    // Метод для показу балансу акаунту клієнта
+    void show_balance() {
+        clientAccount.display_balance();
+    }
 
-    // 5. Метод для читання даних клієнта з файлу
-    void loadFromFile(const string& filename);
+    // Метод для поповнення акаунту клієнта
+    void deposit_money(double amount) {
+        clientAccount.deposit(amount);
+        std::cout << name << " поповнив акаунт на суму: " << amount << std::endl;
+    }
 
-    // 4. Метод для відображення історії платежів
-    void displayPaymentHistory() const;
+    // Метод для здійснення платежу з акаунту клієнта
+    void make_payment(double amount) {
+        if (clientAccount.withdraw(amount)) {
+            std::cout << name << " здійснив платіж на суму: " << amount << std::endl;
+        }
 
-    // 4. Метод для отримання ID клієнта
-    int getClientID() const; // Повертає ID клієнта
+
+
+    }
 };
-
 #endif // CLIENT_H
