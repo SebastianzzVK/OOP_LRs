@@ -36,6 +36,21 @@
     <ClCompile Include="BusinessAccount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DepositTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WithdrawTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h">
@@ -54,6 +69,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BusinessAccount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepositTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WithdrawTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTransaction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

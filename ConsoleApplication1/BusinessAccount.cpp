@@ -6,7 +6,7 @@ BusinessAccount::BusinessAccount(double balance, double creditLimit, const strin
     
 }
 
-// Реалізація деструктора
+
 BusinessAccount::~BusinessAccount() {
     cout << "BusinessAccount destroyed." << endl;
 }

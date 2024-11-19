@@ -11,26 +11,27 @@ class Account {
 private:
     double balance;
     double creditLimit;
-    string accountNumber;
+   
     static int accountCount;
     
 
 protected:
-    string bankName; // Назва банку
-    string branchCode; // Код філії банку
+    string bankName; 
+    string branchCode; 
      
 
 public:
-    Account(); // 1. Конструктор без параметрів
-    Account(double balance, double creditLimit, const string& accountNumber); // 1. Конструктор з параметрами
+    string accountNumber;
+    Account();
+    Account(double balance, double creditLimit, const string& accountNumber); 
     Account(const Account& other); 
-    virtual ~Account();  // Віртуальний деструктор для правильного видалення об'єктів
+    virtual ~Account(); 
 
-    string accountType; // Тип рахунку (наприклад, поточний, депозитний)
-    string accountHolder; // Власник рахунку
+    string accountType;
+    string accountHolder; 
     
-    double getBalance() const; // Метод для отримання балансу
-    static int getAccountCount(); // Статичний метод для отримання кількості рахунків
+    double getBalance() const;
+    static int getAccountCount(); 
     
 
 
@@ -40,11 +41,11 @@ public:
         accountCount++;
     }
 
-    virtual void deposit(double amount) {// Метод для внесення грошей
+    virtual void deposit(double amount) {
         balance += amount;
     }
 
-    virtual bool withdraw(double amount) { // Метод для зняття грошей
+    virtual bool withdraw(double amount) {
         if (balance >= amount) {
             balance -= amount;
             return true;
@@ -61,4 +62,4 @@ public:
 
 };
 
-#endif // ACCOUNT_H
+#endif 

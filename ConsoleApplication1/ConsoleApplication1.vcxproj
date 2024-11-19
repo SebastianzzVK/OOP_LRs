@@ -128,20 +128,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
+    <ClCompile Include="BaseTransaction.cpp" />
     <ClCompile Include="BusinessAccount.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="CreditCardAccount.cpp" />
+    <ClCompile Include="DepositTransaction.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Payment.cpp" />
     <ClCompile Include="SavingsAccount.cpp" />
+    <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="TransferTransaction.cpp" />
+    <ClCompile Include="WithdrawTransaction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
+    <ClInclude Include="BaseTransaction.h" />
     <ClInclude Include="BusinessAccount.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="CreditCardAccount.h" />
+    <ClInclude Include="DepositTransaction.h" />
     <ClInclude Include="Payment.h" />
     <ClInclude Include="SavingsAccount.h" />
+    <ClInclude Include="Transaction.h" />
+    <ClInclude Include="TransferTransaction.h" />
+    <ClInclude Include="WithdrawTransaction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

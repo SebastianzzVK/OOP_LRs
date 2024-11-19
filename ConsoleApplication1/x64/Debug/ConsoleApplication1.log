@@ -1,9 +1,2 @@
-﻿  Account.cpp
-  BusinessAccount.cpp
-  Client.cpp
-  CreditCardAccount.cpp
-  Payment.cpp
-  SavingsAccount.cpp
-  main.cpp
-  Generating Code...
+﻿  main.cpp
   ConsoleApplication1.vcxproj -> C:\Users\koval\Desktop\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

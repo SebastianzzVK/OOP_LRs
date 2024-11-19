@@ -3,16 +3,16 @@
 
 #include "Client.h"
 
-class Payment : private Client { // Закрите наслідування від Client
+class Payment : private Client { 
 private:
-    double paymentAmount; // Сума платежу
-    string paymentMethod; // Метод платежу (наприклад, картка, банківський переказ)
+    double paymentAmount; 
+    string paymentMethod; 
 
 public:
     Payment(double amount, string method)
-        : paymentAmount(amount), paymentMethod(method) {} // Конструктор, що використовує конструктор Client
+        : paymentAmount(amount), paymentMethod(method) {} 
 
-    //Пункт 7
+    
     Payment():paymentAmount(0.0), paymentMethod("def") {
         std::cout << "Payment constructor called." << std::endl;
     }
@@ -25,4 +25,4 @@ public:
     void displayPaymentInfo() const; 
 };
 
-#endif // PAYMENT_H
+#endif 

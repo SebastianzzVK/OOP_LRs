@@ -12,7 +12,6 @@ public:
     SavingsAccount(double initial_balance, const std::string& acc_number, double rate)
         : Account(initial_balance, acc_number), interestRate(rate) {}
 
-    //Пункт 7
     SavingsAccount() : Account() {
         cout << "SavingsAccount constructor called." << endl;
     }

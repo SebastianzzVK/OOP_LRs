@@ -13,7 +13,7 @@ public:
         : Account(initial_balance, acc_number), creditLimit(limit) {}
 
 
-    //Пункт 7
+    
     CreditCardAccount() : Account() {
         cout << "CreditCardAccount constructor called." << endl;
     }
@@ -22,7 +22,7 @@ public:
     ~CreditCardAccount() {
         cout << "CreditCardAccount destructor called." << endl;
     }
-    void applyInterest(); // Нарахування відсотків на залишок
+    void applyInterest(); 
 };
 
 #endif // CREDITCARDACCOUNT_H

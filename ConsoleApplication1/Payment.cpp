@@ -1,6 +1,6 @@
 #include "Payment.h"
 
-// Використання конструктора та методів з класу Client
+
 void Payment::makePayment() {
     
     cout << "Payment of $" << paymentAmount << " completed successfully using " << paymentMethod << endl;
