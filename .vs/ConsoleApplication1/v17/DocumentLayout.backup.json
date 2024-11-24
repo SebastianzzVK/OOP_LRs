@@ -7,56 +7,20 @@
       "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\DepositTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\DepositTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Storage1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Storage1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\WithdrawTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\WithdrawTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment6.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Payment6.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Transaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Transaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\TransferTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\TransferTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Storage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Storage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Account.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Account.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\CreditCardAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BaseTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BaseTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BusinessAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BusinessAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\SavingsAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\SavingsAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\CreditCardAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Payment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Account.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -67,12 +31,60 @@
       "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Payment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BusinessAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\CreditCardAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\DepositTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\DepositTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\WithdrawTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\WithdrawTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\TransferTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\TransferTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Transaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Transaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BaseTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BaseTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BusinessAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\SavingsAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\SavingsAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\SavingsAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\SavingsAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\CreditCardAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Payment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4A8CF29-A437-4E36-94B9-7C193EF663AB}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Payment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,69 +94,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "BaseTransaction.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BaseTransaction.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\BaseTransaction.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BaseTransaction.h",
               "RelativeToolTip": "ConsoleApplication1\\BaseTransaction.h",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-19T15:11:40.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T15:11:40.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "TransferTransaction.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\TransferTransaction.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\TransferTransaction.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\TransferTransaction.h",
               "RelativeToolTip": "ConsoleApplication1\\TransferTransaction.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-19T15:04:24.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "WithdrawTransaction.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\WithdrawTransaction.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\WithdrawTransaction.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\WithdrawTransaction.h",
               "RelativeToolTip": "ConsoleApplication1\\WithdrawTransaction.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-19T15:03:59.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "DepositTransaction.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\DepositTransaction.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\DepositTransaction.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\DepositTransaction.h",
               "RelativeToolTip": "ConsoleApplication1\\DepositTransaction.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-19T15:03:32.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Transaction.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Transaction.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Transaction.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Transaction.h",
               "RelativeToolTip": "ConsoleApplication1\\Transaction.h",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-19T15:02:56.842Z",
               "EditorCaption": ""
@@ -157,36 +168,34 @@
               "RelativeDocumentMoniker": "ConsoleApplication1\\BusinessAccount.cpp",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.cpp",
               "RelativeToolTip": "ConsoleApplication1\\BusinessAccount.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T19:43:37.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "BusinessAccount.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\BusinessAccount.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\BusinessAccount.h",
               "RelativeToolTip": "ConsoleApplication1\\BusinessAccount.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-14T19:43:26.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:43:26.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "SavingsAccount.cpp",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\SavingsAccount.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\SavingsAccount.cpp",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\SavingsAccount.cpp",
               "RelativeToolTip": "ConsoleApplication1\\SavingsAccount.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-14T19:43:00.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:43:00.081Z"
             },
             {
               "$type": "Document",
@@ -196,14 +205,13 @@
               "RelativeDocumentMoniker": "ConsoleApplication1\\SavingsAccount.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\SavingsAccount.h",
               "RelativeToolTip": "ConsoleApplication1\\SavingsAccount.h",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwA4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-14T19:42:57.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:42:57.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "CreditCardAccount.cpp",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\CreditCardAccount.cpp",
@@ -216,93 +224,129 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "CreditCardAccount.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\CreditCardAccount.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\CreditCardAccount.h",
               "RelativeToolTip": "ConsoleApplication1\\CreditCardAccount.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-14T19:41:55.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:41:55.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Payment.cpp",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Payment.cpp",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.cpp",
               "RelativeToolTip": "ConsoleApplication1\\Payment.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-14T19:30:40.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:30:40.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Payment.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Payment.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment.h",
               "RelativeToolTip": "ConsoleApplication1\\Payment.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-14T19:30:38.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:30:38.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "Client.cpp",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Client.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Client.cpp",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Client.cpp",
               "RelativeToolTip": "ConsoleApplication1\\Client.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-27T12:25:02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "Client.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Client.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Client.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Client.h",
               "RelativeToolTip": "ConsoleApplication1\\Client.h",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwCkAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwCsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-27T12:24:57.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "Account.cpp",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Account.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Account.cpp",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Account.cpp",
               "RelativeToolTip": "ConsoleApplication1\\Account.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwG0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-27T11:42:24.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Account.h",
               "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Account.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Account.h",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Account.h",
               "RelativeToolTip": "ConsoleApplication1\\Account.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-27T11:42:03.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Storage1.h",
+              "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Storage1.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Storage1.h",
+              "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Storage1.h*",
+              "RelativeToolTip": "ConsoleApplication1\\Storage1.h*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-24T10:54:09.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Storage.h",
+              "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Storage.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Storage.h",
+              "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Storage.h",
+              "RelativeToolTip": "ConsoleApplication1\\Storage.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-24T10:26:23.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Payment6.h",
+              "DocumentMoniker": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment6.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Payment6.h",
+              "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\Payment6.h",
+              "RelativeToolTip": "ConsoleApplication1\\Payment6.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-24T10:48:30.999Z",
               "EditorCaption": ""
             },
             {
@@ -313,7 +357,7 @@
               "RelativeDocumentMoniker": "ConsoleApplication1\\main.cpp",
               "ToolTip": "C:\\Users\\koval\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\main.cpp*",
               "RelativeToolTip": "ConsoleApplication1\\main.cpp*",
-              "ViewState": "AgIAAOkBAAAAAAAAAAAAAPoBAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAIQCAAAAAAAAAAAAAI4CAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-16T08:01:36.439Z",
               "EditorCaption": ""

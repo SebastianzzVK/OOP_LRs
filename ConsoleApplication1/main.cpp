@@ -6,6 +6,9 @@
 #include "DepositTransaction.h"
 #include "WithdrawTransaction.h"
 #include "TransferTransaction.h"
+#include "Storage.h"
+#include "Storage1.h"
+#include "Payment6.h"
 #include <cstdio>
 #include <windows.h>
 #include <iostream>
@@ -232,311 +235,461 @@ int main(int argc, char* argv[]) {
         //WithdrawTransaction — для зняття коштів із рахунків.
         //TransferTransaction — для переказу коштів між рахунками.
          // Створення акаунтів
-    Account account1(1000.0, "ACC100000000001");
-    Account account2(2000.0, "ACC200000000002");
-
-    // Демонстрація DepositTransaction
-    DepositTransaction deposit("TXN001", 500.0, account1);
-    deposit.displayDetails();
-    deposit.execute();
-    account1.display_balance();
-
-    // Демонстрація WithdrawTransaction
-    WithdrawTransaction withdraw("TXN002", 300.0, account1);
-    withdraw.displayDetails();
-    withdraw.execute();
-    account1.display_balance();
-
-    // Демонстрація TransferTransaction
-    TransferTransaction transfer("TXN003", 700.0, account1, account2);
-    transfer.displayDetails();
-    transfer.execute();
-    account1.display_balance();
-    account2.display_balance();
-
-
-
-
-    //3. Демонстрація віртуальних деструкторів
-    //віртуальний деструктор забезпечує правильне викликання деструкторів похідних класів під час видалення об'єктів 
-    //через базовий покажчик, а звичайний деструктор викликає тільки деструктор базового класу, ігноруючи похідні.
-    /*BaseTransaction destructor called for type: Withdraw
-    BaseTransaction destructor called for type : Deposit
-    BaseTransaction destructor called for type : Transfer*/
-
-    Account fromAccount(1000, "FromAccount");
-    Account toAccount(500, "ToAccount");
-    Account testAccount(300, "TestAccount");
-
-    // Поліморфізм: створюємо об'єкти через базовий покажчик
-    BaseTransaction* transactions[] = {
-        new WithdrawTransaction("1", 100, testAccount),
-        new DepositTransaction("2", 200, testAccount),
-        new TransferTransaction("3", 50, fromAccount, toAccount)
-    };
-
-    // Видалення об'єктів через базовий покажчик
-    for (BaseTransaction* transaction : transactions) {
-        delete transaction;
-    }
-
-    //4. WithdrawTransaction DepositTransaction TransferTransaction виконання
-
-
-
-    Account account3(9990.0, "ACC100000000003");
-    Account account4(8000.0, "ACC200000000004");
-    //5.
-
-    cout << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
-    try {
-        // Створення 5 статичних об'єктів для кожного типу транзакції
-        DepositTransaction deposit1("D1", 500.0, account1);
-        WithdrawTransaction withdraw1("W1", 200.0, account2);
-        TransferTransaction transfer1("T1", 300.0, account1, account2);
-
-        DepositTransaction deposit2("D2", 1000.0, account2);
-        WithdrawTransaction withdraw2("W2", 400.0, account2);
-
-        // Створення 5 динамічних об'єктів для кожного типу транзакції
-        DepositTransaction* dynamicDeposit1 = new DepositTransaction("D3", 600.0, account3);
-        WithdrawTransaction* dynamicWithdraw1 = new WithdrawTransaction("W3", 150.0, account3);
-        TransferTransaction* dynamicTransfer1 = new TransferTransaction("T2", 500.0, account3, account4);
-
-        DepositTransaction* dynamicDeposit2 = new DepositTransaction("D4", 800.0, account4);
-        WithdrawTransaction* dynamicWithdraw2 = new WithdrawTransaction("W4", 200.0, account4);
-
-        // Демонстрація роботи з об'єктами
-        deposit1.displayTransactionDetails();
-        withdraw1.displayTransactionDetails();
-        transfer1.displayTransactionDetails();
-        deposit2.displayTransactionDetails();
-        withdraw2.displayTransactionDetails();
-
-        // Демонстрація роботи з динамічними об'єктами
-        dynamicDeposit1->displayTransactionDetails();
-        dynamicWithdraw1->displayTransactionDetails();
-        dynamicTransfer1->displayTransactionDetails();
-        dynamicDeposit2->displayTransactionDetails();
-        dynamicWithdraw2->displayTransactionDetails();
-
-        // Очищення динамічних об'єктів
-        delete dynamicDeposit1;
-        delete dynamicWithdraw1;
-        delete dynamicTransfer1;
-        delete dynamicDeposit2;
-        delete dynamicWithdraw2;
-
-    }
-    catch (const bad_alloc& e) {
-        cout << "Exception caught: " << e.what() << endl;
-    }
-    catch (const runtime_error& e) {
-        cout << "Runtime error: " << e.what() << endl;
-    }
-    catch (const exception& e) {
-        cout << "General exception caught: " << e.what() << endl;
-    }
-    catch (...) {
-        cout << "Unknown exception caught!" << endl;
-    }
-    cout << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
-    cout << " " << endl;
-
-
-
-
-
-
-
-    //Пункт 6
-    cout << "Пункт 6 ////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
-    try {
-        // Статичні масиви (для демонстрації)
-        const int MAX_SIZE = 5;
-        Transaction* transactions[MAX_SIZE];
-        int size = 0;
-
-        // Додавання кількох транзакцій
-        transactions[size++] = new DepositTransaction("1", 1000.0, account1);
-        transactions[size++] = new DepositTransaction("2", 500.0, account2);
-
-        // Виведення всіх транзакцій
-        for (int i = 0; i < size; ++i) {
-            transactions[i]->displayTransactionDetails();
-        }
-
-        // Виклик методу для видалення транзакції з статичного масиву
-        std::cout << "\nDeleting transaction with ID 1...\n";
-        Service_Static(transactions, size, "1");
-
-        // Виведення залишкових транзакцій
-        std::cout << "\nRemaining transactions in static array:\n";
-        for (int i = 0; i < size; ++i) {
-            transactions[i]->displayTransactionDetails();
-        }
-
-        // Динамічні масиви (використовуємо std::vector)
-        std::vector<Transaction*> dynamicTransactions;
-        dynamicTransactions.push_back(new DepositTransaction("3", 2000.0, account3));
-        dynamicTransactions.push_back(new DepositTransaction("4", 1500.0, account4));
-
-        // Виведення всіх транзакцій
-        std::cout << "\nDisplaying dynamic transactions:\n";
-        for (auto& transaction : dynamicTransactions) {
-            transaction->displayTransactionDetails();
-        }
-
-        // Виклик методу для видалення транзакції з динамічного масиву
-        std::cout << "\nDeleting transaction with ID 3...\n";
-        Service_Dynamic(dynamicTransactions, "3");
-
-        // Виведення залишкових транзакцій
-        std::cout << "\nRemaining transactions in dynamic array:\n";
-        for (auto& transaction : dynamicTransactions) {
-            transaction->displayTransactionDetails();
-        }
-
-        // Очистка пам'яті для динамічних об'єктів
-        for (auto& transaction : dynamicTransactions) {
-            delete transaction;
-        }
-    }
-    catch (const std::bad_alloc& e) {
-        std::cerr << "Memory allocation failed: " << e.what() << std::endl;
-    }
-    cout << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
-    cout << " " << endl;
-
-    //Пункт 7.
-    
-    std::string filename = "dsada";
-
-    // Створюємо об'єкт транзакції
-    DepositTransaction transaction("TX12345", 1000.50, account1);
-
-    // Викликаємо функцію Service
-    Service(transaction, filename);
-
-
-
-
-    //Пункт 8
-    std::vector<std::shared_ptr<Transaction>> transactions1;
-
-    while (true) {
-        std::cout << "Menu:\n";
-        std::cout << "1. Create Deposit Transaction\n";
-        std::cout << "2. Create Withdraw Transaction\n";
-        std::cout << "3. Display Transactions\n";
-        std::cout << "4. Remove Transaction\n";
-        std::cout << "5. Exit\n";
-        std::cout << "Enter your choice: ";
-
-        int choice;
-        std::cin >> choice;
-
-        try {
-            switch (choice) {
-            case 1: {
-                std::string id;
-                double amount;
-                std::cout << "Enter transaction ID: ";
-                std::cin >> id;
-                std::cout << "Enter amount: ";
-                std::cin >> amount;
-
-                transactions1.push_back(std::make_shared<DepositTransaction>(id, amount, account1));
-                std::cout << "Deposit Transaction created successfully.\n";
-                break;
-            }
-            case 2: {
-                std::string id;
-                double amount;
-                std::cout << "Enter transaction ID: ";
-                std::cin >> id;
-                std::cout << "Enter amount: ";
-                std::cin >> amount;
-
-                transactions1.push_back(std::make_shared<WithdrawTransaction>(id, amount, account1));
-                std::cout << "Withdraw Transaction created successfully.\n";
-                break;
-            }
-            case 3: {
-                if (transactions1.empty()) {
-                    std::cout << "No transactions available.\n";
-                }
-                else {
-                    for (const auto& transaction : transactions1) {
-                        transaction->display();
-                    }
-                }
-                break;
-            }
-            case 4: {
-                std::string idToRemove;
-                std::cout << "Enter the ID of the transaction to remove: ";
-                std::cin >> idToRemove;
-
-                Service_Static(transactions1, idToRemove);
-                break;
-            }
-            case 5:
-                std::cout << "Exiting program...\n";
-                return 0;
-            default:
-                std::cerr << "Invalid choice. Please try again.\n";
-            }
-        }
-        catch (const std::exception& e) {
-            std::cerr << "Exception: " << e.what() << std::endl;
-        }
-    }
-
-    //Пункт 9
-    std::vector<std::shared_ptr<Transaction>> transactions2;
-
-    // Створення об'єктів транзакцій
-    transactions2.push_back(std::make_shared<DepositTransaction>("D123", 1000.0, account2));
-    transactions2.push_back(std::make_shared<WithdrawTransaction>("W456", 500.0, account2));
-
-    // Демонстрація поліморфізму через вказівники
-    demonstratePolymorphismUsingPointer(transactions2);
-
-    // Демонстрація поліморфізму через посилання
-    demonstratePolymorphismUsingReference(transactions2);
-
-    // Демонстрація зміни форми об'єкта
-    demonstrateChangingObjectType(transactions2);
-
-
-    //Пункт 10
-    DepositTransaction deposit14("D123", 500.0, account1);
-    deposit14.display();  
-
-    Transaction* transaction14;
-    transaction14 = new DepositTransaction("D1233", 5000.0, account1);
-    //ранннє звязування це те яке компілятор одразу розуміє який тип об'єкта а пізнє це коли створено вказівник на абстрактний об'єкт, а передаємо об'єкт певного типу
-    delete transaction14;
-    transaction14 = new WithdrawTransaction("D12334", 5500.0, account1);
-    delete transaction14;
-
-
-    //Пункт 11
-    std::vector<Transaction*> transactions3;
-
-    // Створення об'єктів різних типів
-    transactions3.push_back(new DepositTransaction("D123", 1000.0, account2));
-    transactions3.push_back(new WithdrawTransaction("W456", 500.0, account2));
-
-    // Демонстрація обходу віртуальних функцій
-    bypassVirtualMethod(transactions3);
-
-    // Очищення пам'яті
-    for (auto& transaction : transactions3) {
-        delete transaction;
-    }
-    //метод має ту саму назву але перезаписує базовий метод, тому базовий метод не викликається, а тільки дочірній
+    //Account account1(1000.0, "ACC100000000001");
+    //Account account2(2000.0, "ACC200000000002");
+
+    //// Демонстрація DepositTransaction
+    //DepositTransaction deposit("TXN001", 500.0, account1);
+    //deposit.displayDetails();
+    //deposit.execute();
+    //account1.display_balance();
+
+    //// Демонстрація WithdrawTransaction
+    //WithdrawTransaction withdraw("TXN002", 300.0, account1);
+    //withdraw.displayDetails();
+    //withdraw.execute();
+    //account1.display_balance();
+
+    //// Демонстрація TransferTransaction
+    //TransferTransaction transfer("TXN003", 700.0, account1, account2);
+    //transfer.displayDetails();
+    //transfer.execute();
+    //account1.display_balance();
+    //account2.display_balance();
+
+
+
+
+    ////3. Демонстрація віртуальних деструкторів
+    ////віртуальний деструктор забезпечує правильне викликання деструкторів похідних класів під час видалення об'єктів 
+    ////через базовий покажчик, а звичайний деструктор викликає тільки деструктор базового класу, ігноруючи похідні.
+    ///*BaseTransaction destructor called for type: Withdraw
+    //BaseTransaction destructor called for type : Deposit
+    //BaseTransaction destructor called for type : Transfer*/
+
+    //Account fromAccount(1000, "FromAccount");
+    //Account toAccount(500, "ToAccount");
+    //Account testAccount(300, "TestAccount");
+
+    //// Поліморфізм: створюємо об'єкти через базовий покажчик
+    //BaseTransaction* transactions[] = {
+    //    new WithdrawTransaction("1", 100, testAccount),
+    //    new DepositTransaction("2", 200, testAccount),
+    //    new TransferTransaction("3", 50, fromAccount, toAccount)
+    //};
+
+    //// Видалення об'єктів через базовий покажчик
+    //for (BaseTransaction* transaction : transactions) {
+    //    delete transaction;
+    //}
+
+    ////4. WithdrawTransaction DepositTransaction TransferTransaction виконання
+
+
+
+    //Account account3(9990.0, "ACC100000000003");
+    //Account account4(8000.0, "ACC200000000004");
+    ////5.
+
+    //cout << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
+    //try {
+    //    // Створення 5 статичних об'єктів для кожного типу транзакції
+    //    DepositTransaction deposit1("D1", 500.0, account1);
+    //    WithdrawTransaction withdraw1("W1", 200.0, account2);
+    //    TransferTransaction transfer1("T1", 300.0, account1, account2);
+
+    //    DepositTransaction deposit2("D2", 1000.0, account2);
+    //    WithdrawTransaction withdraw2("W2", 400.0, account2);
+
+    //    // Створення 5 динамічних об'єктів для кожного типу транзакції
+    //    DepositTransaction* dynamicDeposit1 = new DepositTransaction("D3", 600.0, account3);
+    //    WithdrawTransaction* dynamicWithdraw1 = new WithdrawTransaction("W3", 150.0, account3);
+    //    TransferTransaction* dynamicTransfer1 = new TransferTransaction("T2", 500.0, account3, account4);
+
+    //    DepositTransaction* dynamicDeposit2 = new DepositTransaction("D4", 800.0, account4);
+    //    WithdrawTransaction* dynamicWithdraw2 = new WithdrawTransaction("W4", 200.0, account4);
+
+    //    // Демонстрація роботи з об'єктами
+    //    deposit1.displayTransactionDetails();
+    //    withdraw1.displayTransactionDetails();
+    //    transfer1.displayTransactionDetails();
+    //    deposit2.displayTransactionDetails();
+    //    withdraw2.displayTransactionDetails();
+
+    //    // Демонстрація роботи з динамічними об'єктами
+    //    dynamicDeposit1->displayTransactionDetails();
+    //    dynamicWithdraw1->displayTransactionDetails();
+    //    dynamicTransfer1->displayTransactionDetails();
+    //    dynamicDeposit2->displayTransactionDetails();
+    //    dynamicWithdraw2->displayTransactionDetails();
+
+    //    // Очищення динамічних об'єктів
+    //    delete dynamicDeposit1;
+    //    delete dynamicWithdraw1;
+    //    delete dynamicTransfer1;
+    //    delete dynamicDeposit2;
+    //    delete dynamicWithdraw2;
+
+    //}
+    //catch (const bad_alloc& e) {
+    //    cout << "Exception caught: " << e.what() << endl;
+    //}
+    //catch (const runtime_error& e) {
+    //    cout << "Runtime error: " << e.what() << endl;
+    //}
+    //catch (const exception& e) {
+    //    cout << "General exception caught: " << e.what() << endl;
+    //}
+    //catch (...) {
+    //    cout << "Unknown exception caught!" << endl;
+    //}
+    //cout << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
+    //cout << " " << endl;
+
+
+
+
+
+
+
+    ////Пункт 6
+    //cout << "Пункт 6 ////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
+    //try {
+    //    // Статичні масиви (для демонстрації)
+    //    const int MAX_SIZE = 5;
+    //    Transaction* transactions[MAX_SIZE];
+    //    int size = 0;
+
+    //    // Додавання кількох транзакцій
+    //    transactions[size++] = new DepositTransaction("1", 1000.0, account1);
+    //    transactions[size++] = new DepositTransaction("2", 500.0, account2);
+
+    //    // Виведення всіх транзакцій
+    //    for (int i = 0; i < size; ++i) {
+    //        transactions[i]->displayTransactionDetails();
+    //    }
+
+    //    // Виклик методу для видалення транзакції з статичного масиву
+    //    std::cout << "\nDeleting transaction with ID 1...\n";
+    //    Service_Static(transactions, size, "1");
+
+    //    // Виведення залишкових транзакцій
+    //    std::cout << "\nRemaining transactions in static array:\n";
+    //    for (int i = 0; i < size; ++i) {
+    //        transactions[i]->displayTransactionDetails();
+    //    }
+
+    //    // Динамічні масиви (використовуємо std::vector)
+    //    std::vector<Transaction*> dynamicTransactions;
+    //    dynamicTransactions.push_back(new DepositTransaction("3", 2000.0, account3));
+    //    dynamicTransactions.push_back(new DepositTransaction("4", 1500.0, account4));
+
+    //    // Виведення всіх транзакцій
+    //    std::cout << "\nDisplaying dynamic transactions:\n";
+    //    for (auto& transaction : dynamicTransactions) {
+    //        transaction->displayTransactionDetails();
+    //    }
+
+    //    // Виклик методу для видалення транзакції з динамічного масиву
+    //    std::cout << "\nDeleting transaction with ID 3...\n";
+    //    Service_Dynamic(dynamicTransactions, "3");
+
+    //    // Виведення залишкових транзакцій
+    //    std::cout << "\nRemaining transactions in dynamic array:\n";
+    //    for (auto& transaction : dynamicTransactions) {
+    //        transaction->displayTransactionDetails();
+    //    }
+
+    //    // Очистка пам'яті для динамічних об'єктів
+    //    for (auto& transaction : dynamicTransactions) {
+    //        delete transaction;
+    //    }
+    //}
+    //catch (const std::bad_alloc& e) {
+    //    std::cerr << "Memory allocation failed: " << e.what() << std::endl;
+    //}
+    //cout << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl;
+    //cout << " " << endl;
+
+    ////Пункт 7.
+    //
+    //std::string filename = "dsada";
+
+    //// Створюємо об'єкт транзакції
+    //DepositTransaction transaction("TX12345", 1000.50, account1);
+
+    //// Викликаємо функцію Service
+    //Service(transaction, filename);
+
+
+
+
+    ////Пункт 8
+    //std::vector<std::shared_ptr<Transaction>> transactions1;
+
+    //while (true) {
+    //    std::cout << "Menu:\n";
+    //    std::cout << "1. Create Deposit Transaction\n";
+    //    std::cout << "2. Create Withdraw Transaction\n";
+    //    std::cout << "3. Display Transactions\n";
+    //    std::cout << "4. Remove Transaction\n";
+    //    std::cout << "5. Exit\n";
+    //    std::cout << "Enter your choice: ";
+
+    //    int choice;
+    //    std::cin >> choice;
+
+    //    try {
+    //        switch (choice) {
+    //        case 1: {
+    //            std::string id;
+    //            double amount;
+    //            std::cout << "Enter transaction ID: ";
+    //            std::cin >> id;
+    //            std::cout << "Enter amount: ";
+    //            std::cin >> amount;
+
+    //            transactions1.push_back(std::make_shared<DepositTransaction>(id, amount, account1));
+    //            std::cout << "Deposit Transaction created successfully.\n";
+    //            break;
+    //        }
+    //        case 2: {
+    //            std::string id;
+    //            double amount;
+    //            std::cout << "Enter transaction ID: ";
+    //            std::cin >> id;
+    //            std::cout << "Enter amount: ";
+    //            std::cin >> amount;
+
+    //            transactions1.push_back(std::make_shared<WithdrawTransaction>(id, amount, account1));
+    //            std::cout << "Withdraw Transaction created successfully.\n";
+    //            break;
+    //        }
+    //        case 3: {
+    //            if (transactions1.empty()) {
+    //                std::cout << "No transactions available.\n";
+    //            }
+    //            else {
+    //                for (const auto& transaction : transactions1) {
+    //                    transaction->display();
+    //                }
+    //            }
+    //            break;
+    //        }
+    //        case 4: {
+    //            std::string idToRemove;
+    //            std::cout << "Enter the ID of the transaction to remove: ";
+    //            std::cin >> idToRemove;
+
+    //            Service_Static(transactions1, idToRemove);
+    //            break;
+    //        }
+    //        case 5:
+    //            std::cout << "Exiting program...\n";
+    //            return 0;
+    //        default:
+    //            std::cerr << "Invalid choice. Please try again.\n";
+    //        }
+    //    }
+    //    catch (const std::exception& e) {
+    //        std::cerr << "Exception: " << e.what() << std::endl;
+    //    }
+    //}
+
+    ////Пункт 9
+    //std::vector<std::shared_ptr<Transaction>> transactions2;
+
+    //// Створення об'єктів транзакцій
+    //transactions2.push_back(std::make_shared<DepositTransaction>("D123", 1000.0, account2));
+    //transactions2.push_back(std::make_shared<WithdrawTransaction>("W456", 500.0, account2));
+
+    //// Демонстрація поліморфізму через вказівники
+    //demonstratePolymorphismUsingPointer(transactions2);
+
+    //// Демонстрація поліморфізму через посилання
+    //demonstratePolymorphismUsingReference(transactions2);
+
+    //// Демонстрація зміни форми об'єкта
+    //demonstrateChangingObjectType(transactions2);
+
+
+    ////Пункт 10
+    //DepositTransaction deposit14("D123", 500.0, account1);
+    //deposit14.display();  
+
+    //Transaction* transaction14;
+    //transaction14 = new DepositTransaction("D1233", 5000.0, account1);
+    ////ранннє звязування це те яке компілятор одразу розуміє який тип об'єкта а пізнє це коли створено вказівник на абстрактний об'єкт, а передаємо об'єкт певного типу
+    //delete transaction14;
+    //transaction14 = new WithdrawTransaction("D12334", 5500.0, account1);
+    //delete transaction14;
+
+
+    ////Пункт 11
+    //std::vector<Transaction*> transactions3;
+
+    //// Створення об'єктів різних типів
+    //transactions3.push_back(new DepositTransaction("D123", 1000.0, account2));
+    //transactions3.push_back(new WithdrawTransaction("W456", 500.0, account2));
+
+    //// Демонстрація обходу віртуальних функцій
+    //bypassVirtualMethod(transactions3);
+
+    //// Очищення пам'яті
+    //for (auto& transaction : transactions3) {
+    //    delete transaction;
+    //}
+    ////метод має ту саму назву але перезаписує базовий метод, тому базовий метод не викликається, а тільки дочірній
+
+
+
+
+
+//Пункт 1
+
+// Створення об'єкта Account
+Account myAccount(100.0, "123456789");
+
+// Початковий баланс
+myAccount.display_balance();
+
+// Демонстрація префіксного ++
+++myAccount;
+myAccount.display_balance();
+
+// Демонстрація постфіксного ++
+myAccount++;
+myAccount.display_balance();
+
+// Демонстрація префіксного --
+--myAccount;
+myAccount.display_balance();
+
+// Демонстрація постфіксного --
+myAccount--;
+myAccount.display_balance();
+
+
+cout << endl << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl << endl;
+
+
+//Пункт 2
+// Створення об'єкта Account
+Account myAccount2(100.0, 500.0, "123456789");
+
+// Початковий баланс
+myAccount2.display_balance();
+
+// Демонстрація використання оператора +
+Account newAccount1 = myAccount2 + 50.0;
+newAccount1.display_balance();
+
+// Демонстрація використання оператора -
+Account newAccount2 = myAccount2 - 30.0;
+newAccount2.display_balance();
+
+// Спроба від'ємного результату
+Account failedTransaction = myAccount2 - 150.0;
+failedTransaction.display_balance();
+
+cout << endl << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl << endl;
+
+//Пункт 3
+// Створення об'єктів
+Account acc1(100.0, 500.0, "123456789");
+Account acc2(200.0, 1000.0, "987654321");
+
+// Початковий баланс
+acc1.display_balance();
+acc2.display_balance();
+
+// Оператор =
+acc1 = acc2;
+acc1.display_balance();
+
+// Оператор +=
+acc1 += 50.0;
+acc1.display_balance();
+
+// Оператор -=
+acc1 -= 30.0;
+acc1.display_balance();
+
+// Оператор *=
+acc1 *= 2.0;
+acc1.display_balance();
+
+// Оператор *
+Account acc3 = acc1 * 0.5;
+acc3.display_balance();
+
+// Оператор []
+cout << "Символ за індексом 3 у номері рахунку acc1: " << acc1[3] << endl;
+acc1[3] = 'X'; // Зміна символу
+cout << "Змінений номер рахунку acc1: " << acc1.accountNumber << endl;
+
+cout << endl << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl << endl;
+
+//Пункт 4
+// Демонстрація використання шаблонної функції
+int num1 = 42, num2 = 27;
+double d1 = 15.5, d2 = 20.75;
+
+cout << "Більше між " << num1 << " та " << num2 << ": "
+<< acc1.compareValues(num1, num2) << endl;
+
+cout << "Більше між " << d1 << " та " << d2 << ": "
+<< acc1.compareValues(d1, d2) << endl;
+
+// Використання шаблонної функції з полями класу
+cout << "Більше між балансом acc1 та acc2: "
+<< acc1.compareValues(acc1.getBalance(), acc2.getBalance()) << endl;
+
+cout << endl << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl << endl;
+
+//Пункт 5
+ // Створення об'єкта Storage
+Storage1<int, double, string, char, bool> storage;
+
+// Робота зі списком чисел
+vector<int> intStorage = { 300, 100, 700, 500 };
+cout << "\nСписок чисел перед додаванням і сортуванням:" << endl;
+storage.printValues(intStorage);
+
+storage.addValue(intStorage, 400); // Додаємо число
+storage.sortValues(intStorage); // Сортуємо
+cout << "Список чисел після додавання і сортування:" << endl;
+storage.printValues(intStorage);
+
+// Отримання значення за індексом
+try {
+    cout << "Число за індексом 2: " << storage.getValue(intStorage, 2) << endl;
+}
+catch (const out_of_range& e) {
+    cout << e.what() << endl;
+}
+
+cout << endl << "////////////////////////////////////////////////////////////////////////////////////////////////////////// " << endl << endl;
+
+//Пункт 6
+// Створення об'єкта класу Storage для обробки платежів
+Storage<Payment6> paymentStorage;
+
+// Додавання декількох платежів
+paymentStorage.addValue(Payment6(100.0, "2024-11-01", "Перерахунок", true));
+paymentStorage.addValue(Payment6(50.5, "2024-11-02", "Покупка", false));
+paymentStorage.addValue(Payment6(200.0, "2024-11-03", "Перерахунок", true));
+
+// Виведення всіх платежів
+cout << "Платежі до сортування:" << endl;
+paymentStorage.printValues();
+
+// Сортування платежів за сумою
+paymentStorage.sortValues();
+
+// Виведення відсортованих платежів
+cout << "\nПлатежі після сортування:" << endl;
+paymentStorage.printValues();
 
     return 0;
 }

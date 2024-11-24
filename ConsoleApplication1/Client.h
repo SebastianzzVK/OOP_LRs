@@ -2,17 +2,19 @@
 #define CLIENT_H
 
 #include "Account.h"
+#include <ostream>
 
 class Client {
+
 private:
     string name;
     int clientID;
     Account clientAccount;
 
-    double creditLimitRequest; // Запит на зміну кредитного ліміту
-    bool creditLimitApproved; // Статус затвердження запиту на ліміт
+    double creditLimitRequest; 
+    bool creditLimitApproved; 
 
-    //Пункт 7
+   
 public:
     Client();
     Client(const string& name, int clientID, const Account& account);
@@ -38,5 +40,7 @@ public:
             std::cout << name << " здійснив платіж на суму: " << amount << std::endl;
         }
     }
+
+    
 };
 #endif 

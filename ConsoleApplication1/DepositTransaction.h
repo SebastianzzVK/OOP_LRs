@@ -39,15 +39,6 @@ public:
         std::cout << "Amount: " << amount << std::endl;
         std::cout << "Account ID: " << account.accountNumber << std::endl;
     }
-
-
-    /*void display() const override {
-        std::cout << "Deposit Transaction ID: " << id << ", Amount: " << amount << std::endl;
-    }
-
-    std::string getId() const override {
-        return id;
-    }*/
 };
 
 
